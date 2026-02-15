@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("images/paper.jpg");
+    background-position: center;
+    background-size: cover; 
+    /* i want to change brightness of background image */
+}
+
+.intro h1 {
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.intro h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icons img {
+    transition: 0.25s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.05);
+    transition: 0.25s ease;
+}
+
+.aboutMe {
+    width: fit-content;
+    height: fit-content;
+    border: 1px dashed rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    font-size: 12px;
+}
+
+.aboutMe div {
+    width: 300px;
+    align-items: center;
+}
+
+.aboutMe img {
+    height: 230px;
+    border-radius: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    align-items: right;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.portrait div {
+    width: 10px;
+    margin-right: 300px;
+}
+
+.linkedIn img, .email img, .itchio img, .soundCloud img {
+    height: 25px;
+    margin: 10px;
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+}
+
+.writingProjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 40px;
+}
+
+.physicsEssay img, .hopperEssay img, .moralsEssay img, .cruelDesign img, .perputuaGame img {
+    height: 160px;
+    width: 320px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.portfolio img {
+    transition: 0.25 ease;
+}
+
+.portfolio img:hover {
+    box-shadow: 5px 5px 5px #808080;
+    transform: scale(1.02);
+    transition: 0.25s ease;
+}
